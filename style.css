@@ -61,11 +61,8 @@ body {
 .dev {
   display: flex;
   justify-content: center;
-  font-family: Roboto;
   font-size: 32px;
   font-weight: 500;
-  line-height: 44px;
-  letter-spacing: 0;
   text-align: center;
 }
 
@@ -102,25 +99,42 @@ body {
 }
 
 .bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(./img/Ellipse\ 19.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .sk {
-    display: flex;
-    flex-wrap: wrap;
-    
-
-}
-
-.skills {
-    margin-left: 48px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .main {
-    color: #9490FF;
-    font-size: 12px;
-    font-weight: 500;
+  color: #9490ff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socials :hover {
+  background-color: gold;
+  color: black;
+}
+
+.ham :hover {
+  background-color: gold;
+  color: black;
+}
+
+.space {
+  margin-right: 21px;
 }
