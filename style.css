@@ -1,88 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #191765;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .wrap {
-    background-color: #191765;
-    color: white;
-    max-width: 500px;
-    min-height: 540px;
-    display: flex;
-    flex-direction: column;
-    
+  color: white;
+  max-width: 500px;
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap > * {
-    flex: 1 1 auto;
-
+  flex: 1 1 auto;
 }
 
 .top {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 39px 0 25px;
+}
+
+.logo {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.ham {
+  border: none;
+  background-color: inherit;
 }
 
 .menu div {
-    background-color: white;
+  background-color: white;
 }
 
 .menu {
-    width: 30px;
-    display: block;
-}
-
-.to {
-
-}
-
-.mid {
-
+  width: 30px;
+  display: block;
 }
 
 .header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .dev {
-    display: flex;
-    justify-content: center;
-    font-family: Roboto;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: center;
-
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .name {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    font-family: Roboto;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: 0.3700000047683716px;
-    text-align: center;
-
+  display: flex;
+  justify-content: center;
+  color: #7d73fc;
+  font-size: 48px;
+  font-weight: 700;
 }
 
-.para {
-    display: flex;
-    justify-content: center;
-    flex: 10;
+.fab {
+  margin-bottom: 0;
+}
 
+.headline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(./img/Top\ circles.png);
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+
+.soft {
+  margin: 0;
 }
 
 .pa {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px 24px 40px 24px;
+  color: #c8c8d4;
+}
+
+.bottom {
     display: flex;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sk {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.skills {
+    margin-left: 48px;
+
+}
+
+.main {
+    color: #9490FF;
+    font-size: 12px;
+    font-weight: 500;
 }
