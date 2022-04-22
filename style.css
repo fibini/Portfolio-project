@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #191765;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.wrap {
+  color: white;
+  max-width: 500px;
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap > * {
+  flex: 1 1 auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 39px 0 25px;
+}
+
+.logo {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.ham {
+  border: none;
+  background-color: inherit;
+}
+
+.menu div {
+  background-color: white;
+}
+
+.menu {
+  width: 30px;
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.dev {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  color: #7d73fc;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.fab {
+  margin-bottom: 0;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(./img/Ellipse\ 18.png);
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+
+.soft {
+  margin: 0;
+}
+
+.pa {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px 24px 40px 24px;
+  color: #c8c8d4;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(./img/Ellipse\ 19.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.sk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main {
+  color: #9490ff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.so :hover {
+  background-color: gold;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.so {
+  display: flex;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.ham :hover {
+  background-color: gold;
+  color: black;
+}
+
+.space {
+  margin-right: 21px;
+}
