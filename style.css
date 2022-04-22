@@ -82,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(./img/Top\ circles.png);
+  background-image: url(./img/Ellipse\ 18.png);
   background-repeat: no-repeat;
   flex-wrap: wrap;
 }
@@ -125,9 +125,21 @@ body {
   justify-content: center;
 }
 
-.socials :hover {
+.so :hover {
   background-color: gold;
   color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.so {
+  display: flex;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .ham :hover {
