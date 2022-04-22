@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -81,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(./img/Ellipse\ 18.png);
+  background-image: url(./img/Ellipse\-18.png);
   background-repeat: no-repeat;
   flex-wrap: wrap;
 }
@@ -141,7 +142,7 @@ li {
   margin-bottom: 10px;
 }
 
-.ham :hover {
+.ham:hover {
   background-color: gold;
   color: black;
 }
@@ -151,97 +152,112 @@ li {
 }
 
 .middle {
-    display: grid;
-    grid-template-columns: 24px 327px 24px;
-    grid-template-rows: auto;
-    background-image: url(./img/Ellipse\ 19@2x.png);
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 24px 327px 24px;
+  grid-template-rows: auto;
+  background-image: url(./img/Ellipse\ 19@1x.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
-
 .work {
-    grid-column: 2 / 3;
-    font-size: 40px;
-    font-weight: 500;
-    color: #7d73fc;
+  grid-column: 2 / 3;
+  font-size: 40px;
+  font-weight: 500;
+  color: #7d73fc;
 }
 
 .divi {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .blank {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 .stuff {
-    grid-column: 2 / 3;
-    grid-row: 6 / 7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 0;
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0;
 }
 
 .but {
-    grid-column: 2 / 3;
-    grid-row: 7 / 8;
-    display: flex;
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  display: flex;
 }
 
 .bt {
-    width: 89px;
-    height: 48px;
-    font-size: 12px;
-    font-weight: 500;
-    align-items: center;
-    text-align: center;
-    background-color: #7D73FC;
-    color: white;
+  width: 89px;
+  height: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: #7d73fc;
+  color: white;
 }
 
 .post {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    font-size: 32px;
-    font-weight: 500;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .select {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    color: #DCDCE8;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  color: #dcdce8;
 }
 
 .middle2 {
-    display: grid;
-    grid-template-columns: 24px 327px 24px;
-    grid-template-rows: auto;
-    background-image: url(./img/Ellipse\ 19@2x.png);
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 24px 327px 24px;
+  grid-template-rows: auto;
+  background-image: url(./img/Ellipse\ 20@2x.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100px;
+  margin-bottom: 40px;
 }
 
 .middle3 {
-    display: grid;
-    grid-template-columns: 24px 327px 24px;
-    grid-template-rows: auto;
-    background-image: url(./img/Ellipse\ 19@2x.png);
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 24px 327px 24px;
+  grid-template-rows: auto;
+  background-image: url(./img/Ellipse\-21@2x.png);
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
 .middle4 {
-    display: grid;
-    grid-template-columns: 24px 327px 24px;
-    grid-template-rows: auto;
-    background-image: url(./img/Ellipse\ 19@2x.png);
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 24px 327px 24px;
+  grid-template-rows: auto;
+  background-image: url(./img/Ellipse\ 22@2x.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
 }
 
+.bt:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.bt:focus {
+  background: #5e42d7;
+}
+
+.bt:disabled {
+  background: #2a2b33;
+}
