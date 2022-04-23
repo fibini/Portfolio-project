@@ -100,17 +100,43 @@ body {
 
 .bottom {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding-left: 36px;
+  padding-right: 80px;
   background-image: url(./img/Ellipse\ 19.png);
   background-position: right;
+  background-position-y: -30px;
   background-repeat: no-repeat;
 }
 
 .sk {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding-left: 36px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.fwork {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .main {
