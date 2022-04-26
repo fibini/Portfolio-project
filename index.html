@@ -222,44 +222,86 @@
         </div>
       </section>
       <section class="contact">
-        <div class="co-cont">
         <h1 class="co">CONTACT US</h1>
-        </div>
-        <p>
+        <p class="descrip">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="#" method="post">
-          <ul>
-            <li>
+        <form class="form" action="#" method="post">
+          <ul class="fo">
+            <li class="remo">
               <input
+                class="te"
                 type="text"
                 id="name"
                 name="user"
+                maxlength="30"
                 placeholder="Text input"
+                required
               />
             </li>
-            <li>
+            <li class="remo">
               <input
+                class="te"
                 type="email"
                 id="mail"
                 name="user_email"
-                placeholder="Enter email here"
+                placeholder="fabienswift@gmail.com"
+                required
               />
             </li>
-            <li>
+            <li class="">
               <textarea
+                class="ta"
                 id="txt"
                 name="user_txt"
+                maxlength="500"
                 placeholder="Enter text here"
+                required
               ></textarea>
             </li>
           </ul>
         </form>
         <button class="bt" type="button">see project</button>
-        <img src="./img/Rectangle 42.png" alt="thin horizontal line">
       </section>
+      <img
+        class="divi1"
+        src="./img/Rectangle-42.png"
+        alt="thin horizontal line"
+      />
+      <footer>
+        <div class="social">
+          <ul class="si">
+            <li>
+              <a href="#"
+                ><img class="spacey" src="./img/Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="spacey" src="./img/Frame.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="spacey" src="./img/Vector1.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="spacey" src="./img/Vector2.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="spacey" src="./img/Vector3.png" alt=""
+              /></a>
+            </li>
+          </ul>
+          <a class="movi" href="#">fabienswift@gmail.com</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
