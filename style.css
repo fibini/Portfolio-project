@@ -289,7 +289,9 @@ li {
 }
 
 .contact {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .co {
@@ -297,4 +299,8 @@ li {
   font-size: 32px;
   color: #9390FF;
   align-self: center;
+  height: 35px;
+  width: 327px;
+  text-align: center;
+  margin-left: 24px;
 }
