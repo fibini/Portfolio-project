@@ -25,6 +25,8 @@ copy the repository from the drop down code menu
 ### Install
 clone the repository to your local machine through your code editor using git clone
 
+git clone https://github.com/fibini/Portfolio-project.git
+
 ### Usage
 
 ### Run tests
@@ -41,6 +43,13 @@ clone the repository to your local machine through your code editor using git cl
 - Twitter: [@Onenewpage1](https://twitter.com/Onenewpage1)
 - LinkedIn: [fabien brathwaite](https://www.linkedin.com/in/fabien-brathwaite-91150822a/)
 
+👤 **Author2**
+- GitHub: [@KingKowa](https://github.com/KingKowa)
+- Twitter: [@kingkowa1](https://twitter.com/kingkowa1)
+- LinkedIn: [Frederick Ankomah]( https://www.linkedin.com/in/frederick-ankomah-424548196
+
+)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -55,7 +64,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- special thanks to Darik, who help me
+- special thanks to Darik and Frederick who help me
 
 ## 📝 License
 
