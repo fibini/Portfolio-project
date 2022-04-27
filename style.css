@@ -316,16 +316,8 @@ li {
 
 .form {
   display: flex;
-}
-
-.fo {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0;
-  margin: 0;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .te {
@@ -346,12 +338,6 @@ li {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   padding: 12px;
-}
-
-.remo {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0;
 }
 
 .divi1 {
