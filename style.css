@@ -151,11 +151,11 @@ body {
   justify-content: space-around;
 }
 
-/*.w-group {
+/* .w-group {
   display: flex;
   order: 1;
   justify-content: center;
-}*/
+} */
 
 .wor {
   font-size: 20px;
@@ -762,7 +762,6 @@ ul {
   .adj:hover {
     background-color: gold;
     color: black;
-
   }
 
   .letter:hover {
