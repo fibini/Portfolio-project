@@ -151,10 +151,20 @@ body {
   justify-content: space-around;
 }
 
-.w-group {
+/*.w-group {
   display: flex;
   order: 1;
   justify-content: center;
+}*/
+
+.wor {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.arrow {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .wor1 {
@@ -747,5 +757,20 @@ ul {
 
   .si {
     margin-top: 6px;
+  }
+
+  .adj:hover {
+    background-color: gold;
+    color: black;
+
+  }
+
+  .letter:hover {
+    background-color: gold;
+    color: black;
+  }
+
+  .bt1:hover {
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
 }
