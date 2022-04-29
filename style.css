@@ -176,8 +176,7 @@ body {
 }
 
 .so :hover {
-  background-color: gold;
-  color: black;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 ul {
@@ -270,6 +269,21 @@ ul {
   text-align: center;
   background-color: #7d73fc;
   color: white;
+}
+
+.bt2 {
+  width: 89px;
+  height: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  background-color: #7d73fc;
+  color: white;
+}
+
+.bt2:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .post {
@@ -450,8 +464,7 @@ ul {
 }
 
 .si :hover {
-  background-color: gold;
-  color: black;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .vector-4 {
@@ -606,24 +619,28 @@ ul {
     grid-column: 4 / 5;
     grid-row: 3 / 4;
     margin-left: 24px;
+    padding-right: 142px;
   }
 
   .select {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     margin-left: 24px;
+    padding-right: 142px;
   }
 
   .stuff {
     grid-column: 4 / 5;
     grid-row: 5 / 6;
     margin-left: 24px;
+    padding-right: 142px;
   }
 
   .but {
     grid-column: 4 / 5;
     grid-row: 6 / 7;
     margin-left: 24px;
+    padding-right: 142px;
   }
 
   .middle2 {
@@ -635,6 +652,7 @@ ul {
     height: 448px;
     grid-column: 3 / 5;
     grid-row: 1 / 5;
+    padding-right: 142px;
   }
 
   .post2 {
