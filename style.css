@@ -497,6 +497,8 @@ ul {
 
   .soft {
     font-size: 40px;
+    animation-name: soft;
+    animation-duration: 6s;
   }
 
   .para {
@@ -794,4 +796,21 @@ ul {
   .bt1:hover {
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
+  @keyframes soft {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: rotate(45deg);
+        color: green;
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+
 }
