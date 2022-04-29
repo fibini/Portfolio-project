@@ -81,6 +81,7 @@ body {
 
 .fab {
   margin-bottom: 0;
+  transition: transform 2s;
 }
 
 .headline {
@@ -489,6 +490,9 @@ ul {
     margin-right: 33px;
     font-size: 15px;
     font-weight: 500;
+    transition-property: font-size;
+    transition-delay: 1s;
+    transition-duration: 2s;
   }
 
   .soft {
@@ -778,6 +782,8 @@ ul {
   .adj:hover {
     background-color: gold;
     color: black;
+    font-size: 20px;
+    transform: rotate(360deg);
   }
 
   .letter:hover {
