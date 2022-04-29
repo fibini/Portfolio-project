@@ -81,6 +81,7 @@ body {
 
 .fab {
   margin-bottom: 0;
+  transition: transform 2s;
 }
 
 .headline {
@@ -185,6 +186,7 @@ ul {
 
 .so {
   display: flex;
+  gap: 2rem;
   padding: 0;
   justify-content: center;
 }
@@ -208,10 +210,6 @@ ul {
 .ham:hover {
   background-color: gold;
   color: black;
-}
-
-.space {
-  margin-right: 21px;
 }
 
 .middle {
@@ -442,6 +440,7 @@ ul {
   display: flex;
   margin: 27px 0 5px;
   padding-left: 20px;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -455,11 +454,11 @@ ul {
 }
 
 .spacey {
-  margin-right: 21px;
   align-items: flex-end;
 }
 
 .social {
+  gap: 1.5rem;
   text-align: center;
 }
 
@@ -491,10 +490,15 @@ ul {
     margin-right: 33px;
     font-size: 15px;
     font-weight: 500;
+    transition-property: font-size;
+    transition-delay: 1s;
+    transition-duration: 2s;
   }
 
   .soft {
     font-size: 40px;
+    animation-name: soft;
+    animation-duration: 6s;
   }
 
   .para {
@@ -780,6 +784,7 @@ ul {
   .adj:hover {
     background-color: gold;
     color: black;
+    font-size: 20px;
   }
 
   .letter:hover {
@@ -789,5 +794,24 @@ ul {
 
   .bt1:hover {
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  }
+
+  @keyframes soft {
+    0% {
+      transform: scale(1);
+    }
+
+    25% {
+      transform: scale(1.5);
+    }
+
+    50% {
+      transform: rotate(360deg);
+      color: green;
+    }
+
+    100% {
+      transform: rotate(0);
+    }
   }
 }
