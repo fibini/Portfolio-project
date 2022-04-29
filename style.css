@@ -185,6 +185,7 @@ ul {
 
 .so {
   display: flex;
+  gap: 2rem;
   padding: 0;
   justify-content: center;
 }
@@ -208,10 +209,6 @@ ul {
 .ham:hover {
   background-color: gold;
   color: black;
-}
-
-.space {
-  margin-right: 21px;
 }
 
 .middle {
@@ -442,6 +439,7 @@ ul {
   display: flex;
   margin: 27px 0 5px;
   padding-left: 20px;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -455,11 +453,11 @@ ul {
 }
 
 .spacey {
-  margin-right: 21px;
   align-items: flex-end;
 }
 
 .social {
+  gap: 1.5rem;
   text-align: center;
 }
 
