@@ -32,6 +32,7 @@ git clone https://github.com/fibini/Portfolio-project.git
 ### Run tests
 
 ### Deployment
+https://fibini.github.io/Portfolio-project/
 
 
 
