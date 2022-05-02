@@ -716,14 +716,14 @@ ul {
     color: #9390ff;
     align-items: center;
     height: 35px;
-    width: 684px;
+    width: 100%;
     margin-right: 0;
     text-align: center;
   }
 
   .contact {
     display: grid;
-    grid-template-columns: 378px 684px 378px;
+    grid-template-columns: 378px 1fr 378px;
     grid-template-rows: auto;
   }
 
