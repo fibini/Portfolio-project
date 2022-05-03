@@ -68,5 +68,3 @@ Give a ⭐️ if you like this project!
 - special thanks to Darik and Frederick who help me
 
 ## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
