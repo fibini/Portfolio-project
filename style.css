@@ -38,6 +38,7 @@ body {
   font-size: 18px;
   color: white;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .ham {
@@ -475,6 +476,7 @@ ul {
     color: #fff;
     justify-content: flex-end;
     display: flex;
+    align-items: center;
   }
 
   .ham {
@@ -487,11 +489,12 @@ ul {
   }
 
   .adj {
+    color: white;
+    text-decoration: none;
     margin-right: 33px;
     font-size: 15px;
     font-weight: 500;
     transition-property: font-size;
-    transition-delay: 1s;
     transition-duration: 2s;
   }
 
@@ -779,6 +782,14 @@ ul {
 
   .si {
     margin-top: 6px;
+  }
+
+  .si :hover {
+    transform: scale(1.2);
+  }
+
+  .so :hover {
+    transform: scale(1.2);
   }
 
   .adj:hover {
