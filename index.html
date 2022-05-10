@@ -12,18 +12,29 @@
       <header class="top">
         <a class="logo" href="#">Fabien</a>
         <nav class="ham">
-          <img class="hami" src="./img/Union.png" alt="hamburger img" />
+          <button class="button" type="menu">
+            <div class="hams"></div>
+            <div class="hams"></div>
+            <div class="hams"></div>
+          </button>
+          <button class="clos" type="menu">
+            <div class="cross"></div>
+            <div class="cross"></div>
+          </button>
         </nav>
         <nav class="nav-bar">
-          <a class="adj" href="">Portfolio</a>
-          <a class="adj" href="">About</a>
-          <a class="adj" href="">Contact</a>
+          <a class="adj one" href="#work">Portfolio</a>
+          <a class="adj two" href="#fab">About</a>
+          <a class="adj three" href="#co">Contact</a>
+          <img class="pointer1" src="./img/Union3.png" alt="purple greater than sign">
+          <img class="pointer2" src="./img/Union3.png" alt="purple greater than sign">
+          <img class="pointer3" src="./img/Union3.png" alt="purple greater than sign">
           <a href=""><img class="letter" src="./img/Union1.png" alt="mail image" /></a>
         </nav>
       </header>
       <section class="headline">
         <header class="name">
-          <h1 class="fab">Fabien</h1>
+          <h1 id="fab">Fabien</h1>
         </header>
         <div class="dev">
           <h2 class="soft">Software Developer</h2>
@@ -116,7 +127,7 @@
       </section>
       <!--Middle1-->
       <section class="middle">
-        <h2 class="work">MY RECENT WORK</h2>
+        <h2 id="work">MY RECENT WORK</h2>
         <img class="divi" src="./img/Devider.png" alt="small horizontal line" />
         <img
           class="blank"
@@ -246,7 +257,7 @@
       </section>
       <section class="contact">
         <div class="conta">
-          <h3 class="co">CONTACT US</h3>
+          <h3 id="co">CONTACT US</h3>
         </div>
         <div class="coco">
           <h3 class="co1">Let's chat</h3>
@@ -328,5 +339,6 @@
         </div>
       </footer>
     </div>
+    <script src="javascript.js"></script>
   </body>
 </html>

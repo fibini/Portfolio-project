@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/fibini/Portfolio-project/issues"
   },
-  "homepage": "https://github.com/fibini/Portfolio-project#readme"
+  "homepage": "https://github.com/fibini/Portfolio-project#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0"
+  }
 }
