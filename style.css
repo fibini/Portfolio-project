@@ -12,7 +12,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  color: rgb(124, 43, 43);
+  color: white;
 }
 
 .wrap {
@@ -53,12 +53,16 @@ body {
   background-color: white;
 }
 
-.button.show  {
+.button {
+  background-color: #191765;
+}
+
+.button.show {
   display: none;
 }
 
 .clos {
-  display: block;
+  display: none;
 }
 
 .cross {
@@ -67,14 +71,13 @@ body {
   height: 6px;
   margin: 8px auto;
   background-color: white;
-
 }
 
-.clos.show .cross:nth-child(1){
+.clos.show .cross:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.clos.show .cross:nth-child(2){
+.clos.show .cross:nth-child(2) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -119,7 +122,6 @@ body {
   font-size: 24px;
   font-weight: 500;
   padding-left: 0;
-
 }
 
 .pointer1 {
@@ -137,12 +139,9 @@ body {
   grid-row: 3;
 }
 
-.clos {
- display: none;
-}
-
 .clos.show {
   display: block;
+  background-color: #191765;
 }
 
 .nav-bar {
@@ -339,7 +338,7 @@ ul {
 }
 
 .button:hover {
-  background-color:#191765;
+  background-color: #191765;
 }
 
 .middle {
