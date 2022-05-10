@@ -8,7 +8,7 @@ ham.addEventListener("click", () => {
     clos.classList.toggle("show")
 })
 
-document.querySelectorAll(".adj,.clos").forEach(n => n.addEventListener("click",() => {
+document.querySelectorAll(".adj,.clos").forEach(n => n.addEventListener("click", () => {
     ham.classList.remove("show")
     navbar.classList.remove("show")
     clos.classList.remove("show")
