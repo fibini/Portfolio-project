@@ -396,10 +396,13 @@ ul {
 
 .popout-image {
   display: flex;
-  position: sticky;
   justify-content: center;
   margin-bottom: 8px;
   margin-top: 28px;
+}
+
+.popout-image2 {
+  display: none;
 }
 
 .popout-description{
@@ -461,7 +464,7 @@ ul {
   mix-blend-mode: multiply;
 }
 
-.middle {
+#middle {
   display: grid;
   grid-template-columns: 24px 327px 24px;
   grid-template-rows: auto;
@@ -583,7 +586,7 @@ ul {
   color: #dcdce8;
 }
 
-.middle2 {
+#middle2 {
   display: grid;
   grid-template-columns: 24px 327px 24px;
   grid-template-rows: auto;
@@ -594,7 +597,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.middle3 {
+#middle3 {
   display: grid;
   grid-template-columns: 24px 327px 24px;
   grid-template-rows: auto;
@@ -604,7 +607,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.middle4 {
+#middle4 {
   display: grid;
   grid-template-columns: 24px 327px 24px;
   grid-template-rows: auto;
@@ -850,7 +853,7 @@ ul {
     background-image: none;
   }
 
-  .middle {
+  #middle {
     display: grid;
     grid-template-columns: 142px 444px 1fr 472px 142px;
   }
@@ -903,7 +906,7 @@ ul {
     padding-right: 142px;
   }
 
-  .middle2 {
+  #middle2 {
     grid-template-columns: 142px 472px 1fr 444px 142px;
   }
 
@@ -949,12 +952,12 @@ ul {
     margin-right: 24px;
   }
 
-  .middle3 {
+  #middle3 {
     display: grid;
     grid-template-columns: 142px 444px 1fr 472px 142px;
   }
 
-  .middle4 {
+  #middle4 {
     grid-template-columns: 142px 472px 1fr 444px 142px;
   }
 
@@ -1085,8 +1088,8 @@ ul {
     background-color: #191765;
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
     border: 1px solid white;
-    width: 80%;
-    left: 10%;
+    width:60%;
+    left: 20%;
     top: 12%;
     z-index: 30;
    
@@ -1101,5 +1104,58 @@ ul {
   .popup-top-section h2 {
     font-size: 20px;
     font-weight: 500;
+    padding-left: 24px;
+  }
+
+  .popout-image {
+    display: none;
+  }
+
+  .popout-image2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .popout-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .popout-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 78px;
+  }
+
+  .popout-live {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    width: 108px;
+    height: 48px;
+    margin-bottom: 90px;
+    background-color: #7d73fc;
+    color: white;
+  }
+  
+  .popout-source {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 124px;
+    height: 48px;
+    margin-bottom: 90px;
+    background-color: #7d73fc;
+    color: white;
+  }
+
+  .popup-close {
+    padding-right: 38px;
   }
 }
