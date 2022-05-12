@@ -47,40 +47,37 @@ const projects = [
     source: '',
   }
 ]
+for (i = 0; i > projects.length; i++) {
+  console.log(projects[i].name)
+  cardId = projects[i].id
+  imgId = projects[i].id
+}
 
-projects.forEach((project) => {
-  let tech = ''
-  project.technologies.forEach((technology) => {
-    technology.push(tech)
-    console.log(tech)
-  })
-})
-
-firstproject.innerHTML = `<h2 id="work">MY RECENT WORK</h2>
-<img class="divi" src="./img/Devider.png" alt="small horizontal line" />
+firstproject.innerHTML = `< ${cardId} h2 id="work">MY RECENT WORK</>
+<img ${imgId} class="divi" src="./img/Devider.png" alt="small horizontal line" />
 <img
   class="blank"
-  src="${project.featureimage}"
+  src="${projects[i].featureimage}"
   alt="blank image white screen"
 />
-<h3 class="post">${project.name}</h3>
+<h3 class="post">${projects[i].name}</h3>
 <p class="select">
-  ${project.description}
+  ${projects[i].description}
 </p>
 <ul class="stuff">
-  <li>${project.technologies[0]}</li>
+  <li>${projects[i].technologies[0]}</li>
   <li>
     <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
   </li>
-  <li>${project.technologies[1]}</li>
+  <li>${projects[i].technologies[1]}</li>
   <li>
     <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
   </li>
-  <li>${project.technologies[2]}</li>
+  <li>${projects[i].technologies[2]}</li>
   <li>
     <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
   </li>
-  <li>${project.technologies[3]}</li>
+  <li>${projects[i].technologies[3]}</li>
 </ul>
 <div class="but">
   <button class="bt2" type="button">see project</button>
