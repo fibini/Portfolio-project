@@ -1,14 +1,12 @@
 const hamburgerIcon = document.querySelector('.button');
 const navigationBar = document.querySelector('.nav-bar');
 const closeIcon = document.querySelector('.clos');
-const firstproject = document.getElementById('middle');
-const secondproject = document.getElementById('middle2');
-const thirdproject = document.getElementById('middle3');
-const fourthproject = document.getElementById('middle4');
+
+// Making Projects load dynamically
 const projects = [
   {
     name: 'Multi-Post Stories',
-    featureimage: './img/Img-Placeholder.png',
+    featureimage: './img/Snapshoot Portfolio.png',
     description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
@@ -33,143 +31,49 @@ const projects = [
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: '',
-    source: '',
+    liveversion: 'https://fibini.github.io/Portfolio-project/',
+    source: 'https://github.com/fibini/Portfolio-project',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'ABC',
     featureimage: './img/Img-Placeholder.png',
     description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: '',
-    source: '',
-  }
-]
-for (i = 0; i > projects.length; i++) {
-  console.log(projects[i].name)
-  cardId = projects[i].id
-  imgId = projects[i].id
-}
+    liveversion: 'https://fibini.github.io/Portfolio-project/',
+    source: 'https://github.com/fibini/Portfolio-project',
+  },
+];
 
-firstproject.innerHTML = `< ${cardId} h2 id="work">MY RECENT WORK</>
-<img ${imgId} class="divi" src="./img/Devider.png" alt="small horizontal line" />
+projects.forEach((project, index) => {
+  let tech = '';
+  project.technologies.forEach((technology) => {
+    tech += `<li>${technology}</li><li>
+    <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
+  </li>`;
+  });
+
+  const card = `
 <img
   class="blank"
-  src="${projects[i].featureimage}"
+  src="${project.featureimage}"
   alt="blank image white screen"
 />
-<h3 class="post">${projects[i].name}</h3>
+<h3 class="post">${project.name}</h3>
 <p class="select">
-  ${projects[i].description}
+  ${project.description}
 </p>
 <ul class="stuff">
-  <li>${projects[i].technologies[0]}</li>
-  <li>
-    <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-  </li>
-  <li>${projects[i].technologies[1]}</li>
-  <li>
-    <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-  </li>
-  <li>${projects[i].technologies[2]}</li>
-  <li>
-    <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-  </li>
-  <li>${projects[i].technologies[3]}</li>
+  ${tech}
 </ul>
 <div class="but">
   <button class="bt2" type="button">see project</button>
 </div>`;
+  document.getElementById(`middle${index + 1}`).innerHTML += card;
+});
 
-// secondproject.innerHTML =`<img
-// class="blank2"
-// src="${project.featureimage}"
-// alt="blank image white screen"
-// />
-// <h3 class="post2">${project.name}</h3>
-// <p class="select2">
-// ${project.description}
-// </p>
-// <ul class="stuff2">
-// <li>${project.technologies[0]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[1]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[2]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[3]}</li>
-// </ul>
-// <div class="but2">
-// <button class="bt2" type="button">see project</button>
-// </div>`;
-
-// thirdproject.innerHTML =`<img
-// class="blank"
-// src="${project.featureimage}"
-// alt="blank image white screen"
-// />
-// <h3 class="post">${project.name}</h3>
-// <p class="select">
-// ${project.description}
-// </p>
-// <ul class="stuff">
-// <li>${project.technologies[0]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[1]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[2]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[3]}</li>
-// </ul>
-// <div class="but">
-// <button class="bt2" type="button">see project</button>
-// </div>`;
-
-// fourthproject.innerHTML =`<img
-// class="blank2"
-// src="${project.featureimage}"
-// alt="blank image white screen"
-// />
-// <h3 class="post2">${project.name}</h3>
-// <p class="select2">
-// ${project.description}
-// </p>
-// <ul class="stuff2">
-// <li>${project.technologies[0]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[1]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[2]}</li>
-// <li>
-//   <img src="./img/Rectangle-70.png" alt="upright small rectangle" />
-// </li>
-// <li>${project.technologies[3]}</li>
-// </ul>
-// <div class="but2">
-// <button class="bt2" type="button">see project</button>
-// </div>`;
-
-
-
-
+// Menu button
 hamburgerIcon.addEventListener('click', () => {
   hamburgerIcon.classList.toggle('show');
   navigationBar.classList.toggle('show');
@@ -182,50 +86,52 @@ document.querySelectorAll('.adj,.clos').forEach((n) => n.addEventListener('click
   closeIcon.classList.remove('show');
 }));
 
+// Popup window for projects
 const body = document.querySelector('body');
 const blur = document.querySelector('.container');
-const active = document.querySelector('.bt2')
-active.addEventListener('click', () => {
-  blur.classList.toggle('blur')
-  const section = document.createElement('section');
-  section.className = 'popup-box'
-  const article = document.createElement('article');
-  article.className = 'popup-window'
-  article.innerHTML = `
-        <div class="popup-top-section">
-          <h2>Multi-Post stories</h2>
-          <button class="popup-close">&times;</button>
-        </div>
-        <div class="popout-image">
-          <img src="./img/Snapshoot Portfolio.png" alt="picture with all kinds of shapes inside">
-        </div>
-        <div class="popout-image2">
-          <img class="portfolio-img" src="./img/Snapshoot Portfolio1.png" alt="picture with all kinds of shapes inside">
-        </div>
-        <div class="popout-description">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.
-          </p>
-        </div>
-        <div class="popout-technologies">
-          <img src="./img/Devider1.png" alt="upright small devider line">
-          <h4>html</h4>
-          <img src="./img/Devider1.png" alt="upright small devider line">
-          <h4>Ruby on Rails</h4>
-          <img src="./img/Devider1.png" alt="upright small devider line">
-          <h4>css</h4>
-          <img src="./img/Devider1.png" alt="upright small devider line">
-        </div>
-        <div class="popout-buttons">
-          <button class="popout-live">See Live<span><img src="./img/Icon4.png" alt="pointer icon"></span></button>
-          <button class="popout-source">See Source <span><img src="./img/Vector.png" alt="Github icon"></span></button>
-        </div>`
+const active = document.querySelectorAll('.bt2');
+for (let i = 0; i < active.length; i += 1) {
+  let tech = '';
+  for (let j = 0; j < projects[i].technologies.length; j += 1) {
+    tech += `<img src="./img/Devider1.png" alt="upright small devider line">
+    <h4>${projects[i].technologies[j]}</h4>`;
+  }
+  active[i].addEventListener('click', () => {
+    blur.classList.toggle('blur');
+    const section = document.createElement('section');
+    section.className = 'popup-box';
+    const article = document.createElement('article');
+    article.className = 'popup-window';
+    article.innerHTML = `
+          <div class="popup-top-section">
+            <h2>${projects[i].name}</h2>
+            <button class="popup-close">&times;</button>
+          </div>
+          <div class="popout-image">
+            <img src="${projects[i].featureimage}" alt="picture with all kinds of shapes inside">
+          </div>
+          <div class="popout-image2">
+            <img class="portfolio-img" src="${projects[i].featureimage}" alt="picture with all kinds of shapes inside">
+          </div>
+          <div class="popout-description">
+            <p>${projects[i].description}
+            </p>
+          </div>
+          <div class="popout-technologies">
+            ${tech}
+          </div>
+          <div class="popout-buttons">
+            <button class="popout-live"><a href="${projects[i].liveversion}">See Live</a><span><img src="./img/Icon4.png" alt="pointer icon"></span></button>
+            <button class="popout-source"><a href="${projects[i].source}">See Source</a><span><img src="./img/Vector.png" alt="Github icon"></span></button>
+          </div>`;
 
-  section.appendChild(article);
-  body.appendChild(section);
+    section.appendChild(article);
+    body.appendChild(section);
 
-  const popclose = document.querySelector('.popup-close');
-  popclose.addEventListener('click', () => {
-    section.remove(article)
-    blur.classList.toggle('blur')
-  })
-})
+    const popclose = document.querySelector('.popup-close');
+    popclose.addEventListener('click', () => {
+      section.remove(article);
+      blur.classList.toggle('blur');
+    });
+  });
+}
