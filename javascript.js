@@ -7,53 +7,56 @@ const thirdproject = document.getElementById('middle3');
 const fourthproject = document.getElementById('middle4');
 const projects = [
   {
-    name :'Multi-Post Stories',
-    featureimage : './img/Img-Placeholder.png',
-    description : `A daily selection of privately personalized reads; no accounts or
+    name: 'Multi-Post Stories',
+    featureimage: './img/Img-Placeholder.png',
+    description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies : ['css','html','bootstrap','Ruby'],
-    liveversion : '',
-    source : '', 
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveversion: '',
+    source: '',
   },
   {
-    name :'Multi-Post Stories',
-    featureimage : './img/Img-Placeholder.png',
-    description : `A daily selection of privately personalized reads; no accounts or
+    name: 'Multi-Post Stories',
+    featureimage: './img/Img-Placeholder.png',
+    description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies : ['css','html','bootstrap','Ruby'],
-    liveversion : '',
-    source : '',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveversion: '',
+    source: '',
   },
   {
-    name :'Multi-Post Stories',
-    featureimage : './img/Img-Placeholder.png',
-    description : `A daily selection of privately personalized reads; no accounts or
+    name: 'Multi-Post Stories',
+    featureimage: './img/Img-Placeholder.png',
+    description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies : ['css','html','bootstrap','Ruby'],
-    liveversion : '',
-    source : '',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveversion: '',
+    source: '',
   },
   {
-    name :'Multi-Post Stories',
-    featureimage : './img/Img-Placeholder.png',
-    description : `A daily selection of privately personalized reads; no accounts or
+    name: 'Multi-Post Stories',
+    featureimage: './img/Img-Placeholder.png',
+    description: `A daily selection of privately personalized reads; no accounts or
     sign-ups required. has been the industry's standard dummy text ever
     since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies : ['css','html','bootstrap','Ruby'],
-    liveversion : '',
-    source : '',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    liveversion: '',
+    source: '',
   }
 ]
 
-projects.forEach((project)=>{
+projects.forEach((project) => {
   let tech = ''
-  project.technologies.forEach((technology)=>{})
+  project.technologies.forEach((technology) => {
+    technology.push(tech)
+    console.log(tech)
+  })
 })
 
-firstproject.innerHTML =`<h2 id="work">MY RECENT WORK</h2>
+firstproject.innerHTML = `<h2 id="work">MY RECENT WORK</h2>
 <img class="divi" src="./img/Devider.png" alt="small horizontal line" />
 <img
   class="blank"
@@ -185,10 +188,10 @@ document.querySelectorAll('.adj,.clos').forEach((n) => n.addEventListener('click
 const body = document.querySelector('body');
 const blur = document.querySelector('.container');
 const active = document.querySelector('.bt2')
-active.addEventListener('click', ()=> {
+active.addEventListener('click', () => {
   blur.classList.toggle('blur')
   const section = document.createElement('section');
-  section.className ='popup-box'
+  section.className = 'popup-box'
   const article = document.createElement('article');
   article.className = 'popup-window'
   article.innerHTML = `
@@ -220,12 +223,12 @@ active.addEventListener('click', ()=> {
           <button class="popout-source">See Source <span><img src="./img/Vector.png" alt="Github icon"></span></button>
         </div>`
 
-        section.appendChild(article);
-        body.appendChild(section);
+  section.appendChild(article);
+  body.appendChild(section);
 
-        const popclose = document.querySelector('.popup-close');
-        popclose.addEventListener('click', ()=> {
-          section.remove(article)
-          blur.classList.toggle('blur')
-        })
+  const popclose = document.querySelector('.popup-close');
+  popclose.addEventListener('click', () => {
+    section.remove(article)
+    blur.classList.toggle('blur')
+  })
 })
