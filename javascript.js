@@ -135,3 +135,17 @@ for (let i = 0; i < active.length; i += 1) {
     });
   });
 }
+// Email Validation
+const contactform = document.getElementById('forms');
+const email = document.getElementById('mail');
+const errormessage = document.getElementById('error');
+const regx = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+
+contactform.addEventListener('submit', (event) => {
+  const error = [];
+  if (!regx.test(email.value)) {
+    error.push('Email needs to be lowercase.Form not sent!');
+    errormessage.innerText = error;
+    event.preventDefault();
+  }
+});
