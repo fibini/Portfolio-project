@@ -135,3 +135,33 @@ for (let i = 0; i < active.length; i += 1) {
     });
   });
 }
+
+const contactform = document.getElementById('forms');
+const email = document.getElementById('mail');
+const errormessage = document.getElementById('error');
+const regx = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/
+
+//function emailValidate(input){
+  //}
+  //return true
+//}
+
+contactform.addEventListener('submit',(event)=>{
+  let error = [];
+  if(!regx.test(email.value)){
+    error.push('Email needs to be lowercase.Form not sent!')
+    errormessage.innerText = error
+    event.preventDefault()
+  }
+})
+
+// contactform.addEventListener('submit',(event)=>{
+//   let error = [];
+//   let lowercase ='/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/';
+//   if(email !== lowercase){
+//     error.push('Email needs to be lowercase.Form not sent!')
+//     errormessage.innerText = error
+//     event.preventDefault()
+//   }
+// })
+

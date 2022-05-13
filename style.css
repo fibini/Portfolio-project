@@ -668,10 +668,18 @@ ul {
   align-items: center;
 }
 
-.te {
+#name {
   width: 327px;
   height: 18px;
-  margin-bottom: 24px;
+  padding: 16px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+#mail {
+  width: 327px;
+  height: 18px;
   padding: 16px 15px;
   font-size: 15px;
   font-weight: 400;
@@ -1027,7 +1035,11 @@ ul {
     grid-row: 3 / 4;
   }
 
-  .te {
+  #name {
+    width: 90%;
+  }
+
+  #mail {
     width: 90%;
   }
 
