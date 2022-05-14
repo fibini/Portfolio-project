@@ -140,7 +140,18 @@ const contactform = document.getElementById('forms');
 const email = document.getElementById('mail');
 const errormessage = document.getElementById('error');
 const regx = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+const formname = document.getElementById('name');
+const formmail = document.getElementById('mail');
+const formtext = document.getElementById('txt');
 
+
+const formstorage = JSON.parse(localStorage.getItem('formstorage'));
+if(formstorage) {
+  formname.value = formstorage.name;
+  formmail.value = formstorage.email;
+  formtext.value = formstorage.text
+
+}
 contactform.addEventListener('submit', (event) => {
   const error = [];
   if (!regx.test(email.value)) {
@@ -148,4 +159,14 @@ contactform.addEventListener('submit', (event) => {
     errormessage.innerText = error;
     event.preventDefault();
   }
+  const name = formname.value;
+  const mail = formmail.value;
+  const text = formtext.value;
+  const formstorage = {
+  name : name,
+  email : mail,
+  text : text
+  };
+
+  localStorage.setItem('formstorage', JSON.stringify(formstorage))
 });
