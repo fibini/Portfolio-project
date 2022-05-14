@@ -145,7 +145,7 @@ contactform.addEventListener('submit', (event) => {
   const error = [];
   if (!regx.test(email.value)) {
     error.push('Email needs to be lowercase.Form not sent!');
-    errormessage.innerText = error;
+    errormessage.innerText = errror;
     event.preventDefault();
   }
 });
