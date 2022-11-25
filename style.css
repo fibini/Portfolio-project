@@ -353,15 +353,14 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
   color: white;
   background-color: #191765;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border: 1px solid white;
-  width: 80%;
-  left: 10%;
-  top: 12%;
-  z-index: 30;
+  margin-top: 50px;
+  bottom: 10px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .popup-box {
@@ -397,8 +396,8 @@ ul {
 .popout-image {
   display: flex;
   justify-content: center;
-  margin-bottom: 8px;
-  margin-top: 28px;
+  width: 80%;
+  height: 80%;
 }
 
 .popout-image2 {
@@ -410,8 +409,8 @@ ul {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .popout-technologies {
@@ -436,7 +435,8 @@ ul {
   font-weight: 500;
   width: 108px;
   height: 48px;
-  margin-top: 24px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #7d73fc;
   color: white;
 }
@@ -447,8 +447,8 @@ ul {
   align-items: center;
   width: 124px;
   height: 48px;
-  margin-top: 24px;
-  margin-bottom: 28px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: #7d73fc;
   color: white;
 }
@@ -481,6 +481,8 @@ ul {
 }
 
 .blank {
+  width: 100%;
+  height: 100%;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
@@ -914,14 +916,14 @@ ul {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     margin-left: 24px;
-    padding-right: 100px;
+    padding-right: 5%;
   }
 
   #middle4 .select {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     margin-left: 24px;
-    padding-right: 100px;
+    padding-right: 5%;
   }
 
   .stuff {
@@ -941,7 +943,7 @@ ul {
   #middle2 {
     direction: ltr;
     direction: rtl;
-    grid-template-columns: 142px 472px 1fr 444px 142px;
+    grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
   }
 
   .blank2 {
@@ -994,7 +996,7 @@ ul {
   #middle4 {
     direction: ltr;
     direction: rtl;
-    grid-template-columns: 142px 472px 1fr 444px 142px;
+    grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
   }
 
   .co {
@@ -1164,8 +1166,8 @@ ul {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    padding-left: 236px;
-    padding-right: 236px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .popout-buttons {
@@ -1183,7 +1185,7 @@ ul {
     font-weight: 500;
     width: 108px;
     height: 48px;
-    margin-bottom: 90px;
+    margin-bottom: 5%;
     background-color: #7d73fc;
     color: white;
   }
@@ -1194,7 +1196,7 @@ ul {
     align-items: center;
     width: 124px;
     height: 48px;
-    margin-bottom: 90px;
+    margin-bottom: 5%;
     background-color: #7d73fc;
     color: white;
   }
@@ -1213,7 +1215,7 @@ ul {
   }
 
   .portfolio-img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
   }
 }
