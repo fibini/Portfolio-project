@@ -664,6 +664,10 @@ ul {
   text-align: center;
 }
 
+.animation {
+  display: none;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -751,6 +755,10 @@ ul {
 
   .ham {
     display: none;
+  }
+
+  .animation {
+    display: flex;
   }
 
   .letter {
