@@ -5,44 +5,36 @@ const closeIcon = document.querySelector('.clos');
 // Making Projects load dynamically
 const projects = [
   {
-    name: 'Multi-Post Stories',
-    featureimage: './img/Snapshoot Portfolio.png',
-    description: `A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: '',
-    source: '',
+    name: 'Spotify-API',
+    featureimage: './img/Screenshot_spotitfy.png',
+    description: 'In this app, you can like and comment on songs. External API used: Spotify',
+    technologies: ['Css', 'Html', 'Javascript'],
+    liveversion: 'https://daf98.github.io/Spotify-API/dist/',
+    source: 'https://github.com/Daf98/Spotify-API',
   },
   {
-    name: 'Multi-Post Stories',
-    featureimage: './img/Img-Placeholder.png',
-    description: `A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: '',
-    source: '',
+    name: 'React-Bookstore',
+    featureimage: './img/Screenshot_bookstore.png',
+    description: 'A Bookstore App which allows you to add and remove your favorite books',
+    technologies: ['Css', 'Html', 'React', 'Javascript'],
+    liveversion: 'https://62e301da62d6ee1be945ba41--zesty-palmier-fd5ec0.netlify.app/',
+    source: 'https://github.com/fibini/React-Bookstore',
   },
   {
-    name: 'Multi-Post Stories',
-    featureimage: './img/Img-Placeholder.png',
-    description: `A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: 'https://fibini.github.io/Portfolio-project/',
-    source: 'https://github.com/fibini/Portfolio-project',
+    name: 'Space-Travelers-Hub',
+    featureimage: './img/Screenshot_missions.png',
+    description: 'This web app works with the real live data from the SpaceX API. It is for a company (not a real one) that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions',
+    technologies: ['Css', 'Html', 'Javascript'],
+    liveversion: 'https://dev--frolicking-kataifi-133879.netlify.app/',
+    source: 'https://github.com/GiuseppeTG/Space-Travelers-Hub',
   },
   {
-    name: 'ABC',
-    featureimage: './img/Img-Placeholder.png',
-    description: `A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a standard dummy text.`,
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveversion: 'https://fibini.github.io/Portfolio-project/',
-    source: 'https://github.com/fibini/Portfolio-project',
+    name: 'Budget_app',
+    featureimage: './img/Screenshot_budgetapp.png',
+    description: 'This project is about building a mobile web application where you can manage your budget, you have a list of transactions associated with a category, so that you can see how much money you spent and on what',
+    technologies: ['Css', 'Html', 'Scss', 'Ruby', 'Javascript'],
+    liveversion: 'https://sleepy-shelf-32739.herokuapp.com/',
+    source: 'https://github.com/fibini/Budget_app',
   },
 ];
 
