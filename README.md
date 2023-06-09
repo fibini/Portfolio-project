@@ -2,12 +2,12 @@
 
 # Portfolio-project
 
-> My first attempt at making my portfolio website, the mobile edition.
+> My first attempt at making my portfolio website, the mobile and desktop view.
 
 
 ## Built With
 
-- Html and csss
+- Html,css and Javascript
 -
 -
 
