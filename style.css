@@ -353,17 +353,16 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
   color: white;
   background-color: #191765;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border: 1px solid white;
-  margin-top: 50px;
-  bottom: 10px;
-  width: 100vw;
-  height: 100vh;
 }
 
 .popup-box {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -393,12 +392,10 @@ ul {
   font-size: 40px;
 }
 
-.popout-image {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  height: 80%;
-}
+/* .popout-image {
+  width: 10%;
+  height: 10%;
+} */
 
 .popout-image2 {
   display: none;
@@ -1130,19 +1127,10 @@ ul {
   }
 
   .popup-window {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    color: white;
-    background-color: #191765;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border: 1px solid white;
-    width: 60%;
-    height: auto;
-    left: 20%;
-    top: 0;
-    z-index: 30;
+  width: 50%;
+  height: auto;
+  top: 10%;
+
   }
 
   .popup-top-section {
@@ -1191,22 +1179,31 @@ ul {
     align-items: center;
     font-size: 12px;
     font-weight: 500;
-    width: 108px;
-    height: 48px;
-    margin-bottom: 5%;
+    height:3rem;
+    width: 100%;
     background-color: #7d73fc;
     color: white;
+    text-decoration: none;
+  }
+
+  .popout-live:hover {
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+    cursor: pointer;
   }
 
   .popout-source {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 124px;
-    height: 48px;
-    margin-bottom: 5%;
+    height:3rem;
+    width: 100%;
     background-color: #7d73fc;
     color: white;
+  }
+
+  .popout-source:hover {
+    box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+    cursor: pointer;
   }
 
   .popup-close {
@@ -1225,5 +1222,9 @@ ul {
   .portfolio-img {
     width: 80%;
     height: 80%;
+  }
+
+  a{
+    text-decoration: none;
   }
 }
