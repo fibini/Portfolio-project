@@ -29,12 +29,12 @@ const projects = [
     source: 'https://github.com/GiuseppeTG/Space-Travelers-Hub',
   },
   {
-    name: 'Budget_app',
-    featureimage: './img/Screenshot_budgetapp.png',
-    description: 'This project is about building a mobile web application where you can manage your budget, you have a list of transactions associated with a category, so that you can see how much money you spent and on what',
-    technologies: ['Css', 'Html', 'Scss', 'Ruby', 'Javascript'],
-    liveversion: 'https://sleepy-shelf-32739.herokuapp.com/',
-    source: 'https://github.com/fibini/Budget_app',
+    name: 'The Serial Entrepreneur',
+    featureimage: './img/Screenshot-serial-entrepreneur.png',
+    description: 'This project is a portfolio website built using React and tailwind.css, it also includes a light and dark mode',
+    technologies: ['Tailwind.css', 'Html', 'React', 'Javascript'],
+    liveversion: 'https://serial-entreprenuer-website-lmnn2js31-fabienswift-gmailcom.vercel.app/',
+    source: 'https://github.com/fibini/serial-entreprenuer-website',
   },
 ];
 
@@ -94,9 +94,6 @@ for (let i = 0; i < active.length; i += 1) {
           <div class="popup-top-section">
             <h2>${projects[i].name}</h2>
             <button class="popup-close">&times;</button>
-          </div>
-          <div class="popout-image">
-            <img src="${projects[i].featureimage}" alt="picture with all kinds of shapes inside">
           </div>
           <div class="popout-image2">
             <img class="portfolio-img" src="${projects[i].featureimage}" alt="picture with all kinds of shapes inside">

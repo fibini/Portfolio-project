@@ -9,18 +9,22 @@ body {
   background-color: #191765;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   color: white;
 }
 
-.container.blur {
+/* .container.blur {
   display: flex;
   flex-direction: column;
   color: white;
   filter: blur(15px);
-}
+} */
 
 .wrap {
   color: white;
@@ -36,9 +40,14 @@ body {
 
 .top {
   display: flex;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 8%;
   justify-content: space-between;
-  margin: 25px 39px 0 25px;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  background-color: #191765;
 }
 
 .logo {
@@ -46,6 +55,7 @@ body {
   color: white;
   font-weight: 500;
   text-decoration: none;
+  margin-left: 2rem;
 }
 
 .ham {
@@ -62,6 +72,7 @@ body {
 
 .button {
   background-color: #191765;
+  margin-right: 2rem;
 }
 
 .button.show {
@@ -149,20 +160,21 @@ body {
 .clos.show {
   display: block;
   background-color: #191765;
+  margin-right: 2rem;
 }
 
 .nav-bar {
   display: none;
 }
 
-.adj {
+/* .adj {
   color: white;
   text-decoration: none;
   padding-bottom: 24px;
   padding-left: 40px;
   font-size: 24px;
   font-weight: 500;
-}
+} */
 
 .letter {
   display: none;
@@ -173,10 +185,10 @@ body {
   grid-template-columns: 40px 1fr 1fr 6px 48px;
   grid-template-rows: auto;
   align-content: start;
-  height: 812px;
+  height:100vh;
   gap: 0;
   position: fixed;
-  top: 108px;
+  top: 8%;
   background-color: #191765;
   width: 100%;
   background-image: url(./img/shapes\ mobile\ menu.png);
@@ -193,6 +205,9 @@ body {
 .menu {
   width: 30px;
   display: block;
+}
+
+.headline {
 }
 
 .header {
@@ -214,11 +229,13 @@ body {
   color: #7d73fc;
   font-size: 48px;
   font-weight: 700;
+  top: 10rem;
 }
 
 #fab {
   margin-bottom: 0;
   transition: transform 2s;
+  padding-top: 4rem;
 }
 
 .headline {
@@ -343,11 +360,12 @@ ul {
 }
 
 /* popup window */
+
 .popup-window {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   height: auto;
   top: 10%;
   position: fixed;
@@ -356,6 +374,7 @@ ul {
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border: 1px solid white;
 }
+
 
 #popup-box {
   display: none; /* Hidden by default */
@@ -377,6 +396,16 @@ ul {
   align-items: center;
 }
 
+.portfolio-img {
+  width: 80%;
+  height: 80%;
+}
+
+.popout-image2 {
+  display: flex;
+  justify-content: center;
+}
+
 .popup-top-section h2 {
   font-size: 20px;
   font-weight: 500;
@@ -389,10 +418,6 @@ ul {
   cursor: pointer;
   color: white;
   font-size: 40px;
-}
-
-.popout-image2 {
-  display: none;
 }
 
 .popout-description {
@@ -464,6 +489,7 @@ ul {
   font-size: 40px;
   font-weight: 500;
   color: #7d73fc;
+  padding-top: 4rem;
 }
 
 .divi {
@@ -646,6 +672,7 @@ ul {
   text-align: center;
   margin-left: 24px;
   margin-right: 24px;
+  padding-top: 4rem;
 }
 
 .descrip {
@@ -738,6 +765,7 @@ ul {
     justify-content: flex-end;
     display: flex;
     align-items: center;
+    margin-right: 2rem;
   }
 
   .nav-bar.show {
@@ -1015,6 +1043,7 @@ ul {
     width: 100%;
     margin-right: 0;
     text-align: center;
+    padding-top: 4rem;
   }
 
   .contact {
@@ -1121,7 +1150,17 @@ ul {
   }
 
   .popup-window {
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    top: 10%;
+    position: fixed;
+    color: white;
+    background-color: #191765;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border: 1px solid white;
   }
 
   .popup-top-section {
@@ -1134,10 +1173,6 @@ ul {
     font-size: 20px;
     font-weight: 500;
     padding-left: 24px;
-  }
-
-  .popout-image {
-    display: none;
   }
 
   .popout-image2 {
@@ -1213,9 +1248,5 @@ ul {
   .portfolio-img {
     width: 80%;
     height: 80%;
-  }
-
-  a{
-    text-decoration: none;
   }
 }
