@@ -19,12 +19,12 @@ a {
   color: white;
 }
 
-.container.blur {
+/* .container.blur {
   display: flex;
   flex-direction: column;
   color: white;
   filter: blur(15px);
-}
+} */
 
 .wrap {
   color: white;
@@ -40,9 +40,14 @@ a {
 
 .top {
   display: flex;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 8%;
   justify-content: space-between;
-  margin: 25px 39px 0 25px;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  background-color: #191765;
 }
 
 .logo {
@@ -50,6 +55,7 @@ a {
   color: white;
   font-weight: 500;
   text-decoration: none;
+  margin-left: 2rem;
 }
 
 .ham {
@@ -66,6 +72,7 @@ a {
 
 .button {
   background-color: #191765;
+  margin-right: 2rem;
 }
 
 .button.show {
@@ -153,20 +160,21 @@ a {
 .clos.show {
   display: block;
   background-color: #191765;
+  margin-right: 2rem;
 }
 
 .nav-bar {
   display: none;
 }
 
-.adj {
+/* .adj {
   color: white;
   text-decoration: none;
   padding-bottom: 24px;
   padding-left: 40px;
   font-size: 24px;
   font-weight: 500;
-}
+} */
 
 .letter {
   display: none;
@@ -177,10 +185,10 @@ a {
   grid-template-columns: 40px 1fr 1fr 6px 48px;
   grid-template-rows: auto;
   align-content: start;
-  height: 812px;
+  height:100vh;
   gap: 0;
   position: fixed;
-  top: 108px;
+  top: 8%;
   background-color: #191765;
   width: 100%;
   background-image: url(./img/shapes\ mobile\ menu.png);
@@ -197,6 +205,9 @@ a {
 .menu {
   width: 30px;
   display: block;
+}
+
+.headline {
 }
 
 .header {
@@ -218,11 +229,13 @@ a {
   color: #7d73fc;
   font-size: 48px;
   font-weight: 700;
+  top: 10rem;
 }
 
 #fab {
   margin-bottom: 0;
   transition: transform 2s;
+  padding-top: 4rem;
 }
 
 .headline {
@@ -476,6 +489,7 @@ ul {
   font-size: 40px;
   font-weight: 500;
   color: #7d73fc;
+  padding-top: 4rem;
 }
 
 .divi {
@@ -658,6 +672,7 @@ ul {
   text-align: center;
   margin-left: 24px;
   margin-right: 24px;
+  padding-top: 4rem;
 }
 
 .descrip {
@@ -750,6 +765,7 @@ ul {
     justify-content: flex-end;
     display: flex;
     align-items: center;
+    margin-right: 2rem;
   }
 
   .nav-bar.show {
@@ -1027,6 +1043,7 @@ ul {
     width: 100%;
     margin-right: 0;
     text-align: center;
+    padding-top: 4rem;
   }
 
   .contact {
