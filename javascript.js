@@ -113,8 +113,8 @@ for (let i = 0; i < active.length; i += 1) {
             ${tech}
           </div>
           <div class="popout-buttons">
-            <button class="popout-live"><a href="${projects[i].liveversion}">See Live</a><span><img src="./img/Icon4.png" alt="pointer icon"></span></button>
-            <button class="popout-source"><a href="${projects[i].source}">See Source</a><span><img src="./img/Vector.png" alt="Github icon"></span></button>
+            <a target="_blank" href="${projects[i].liveversion}"><button class="popout-live">See Live<span><img src="./img/Icon4.png" alt="pointer icon"></span></button></a>
+            <a target="_blank" href="${projects[i].source}"><button class="popout-source">See Source<span><img src="./img/Vector.png" alt="Github icon"></span></button></a>
           </div>`;
 
     section.appendChild(article);
