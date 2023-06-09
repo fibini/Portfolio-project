@@ -54,8 +54,8 @@ body {
 
 .hams {
   display: block;
-  width: 26px;
-  height: 6px;
+  width: 1rem;
+  height: 3px;
   margin: 4px auto;
   background-color: white;
 }
@@ -289,12 +289,6 @@ body {
   justify-content: space-around;
 }
 
-/* .w-group {
-  display: flex;
-  order: 1;
-  justify-content: center;
-} */
-
 .wor {
   font-size: 20px;
   font-weight: 500;
@@ -353,6 +347,9 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
+  height: auto;
+  top: 10%;
   position: fixed;
   color: white;
   background-color: #191765;
@@ -360,16 +357,18 @@ ul {
   border: 1px solid white;
 }
 
-.popup-box {
-  display: flex;
+#popup-box {
+  display: none; /* Hidden by default */
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.16);
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .popup-top-section {
@@ -391,11 +390,6 @@ ul {
   color: white;
   font-size: 40px;
 }
-
-/* .popout-image {
-  width: 10%;
-  height: 10%;
-} */
 
 .popout-image2 {
   display: none;
@@ -1127,10 +1121,7 @@ ul {
   }
 
   .popup-window {
-  width: 50%;
-  height: auto;
-  top: 10%;
-
+  
   }
 
   .popup-top-section {

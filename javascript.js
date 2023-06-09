@@ -79,8 +79,6 @@ document.querySelectorAll('.adj,.clos').forEach((n) => n.addEventListener('click
 }));
 
 // Popup window for projects
-const body = document.querySelector('body');
-const blur = document.querySelector('.container');
 const active = document.querySelectorAll('.bt2');
 for (let i = 0; i < active.length; i += 1) {
   let tech = '';
@@ -89,12 +87,10 @@ for (let i = 0; i < active.length; i += 1) {
     <h4>${projects[i].technologies[j]}</h4>`;
   }
   active[i].addEventListener('click', () => {
-    blur.classList.toggle('blur');
-    const section = document.createElement('section');
-    section.className = 'popup-box';
-    const article = document.createElement('article');
-    article.className = 'popup-window';
-    article.innerHTML = `
+    const section = document.getElementById('popup-box');
+    section.style.display = 'flex';
+    section.innerHTML = `
+        <article class="popup-window">
           <div class="popup-top-section">
             <h2>${projects[i].name}</h2>
             <button class="popup-close">&times;</button>
@@ -115,18 +111,22 @@ for (let i = 0; i < active.length; i += 1) {
           <div class="popout-buttons">
             <a target="_blank" href="${projects[i].liveversion}"><button class="popout-live">See Live<span><img src="./img/Icon4.png" alt="pointer icon"></span></button></a>
             <a target="_blank" href="${projects[i].source}"><button class="popout-source">See Source<span><img src="./img/Vector.png" alt="Github icon"></span></button></a>
-          </div>`;
-
-    section.appendChild(article);
-    body.appendChild(section);
+          </div>
+        </article>`;
 
     const popclose = document.querySelector('.popup-close');
     popclose.addEventListener('click', () => {
-      section.remove(article);
-      blur.classList.toggle('blur');
+      section.style.display = 'none';
     });
+
+    window.onclick = function (event) {
+      if (event.target === section) {
+        section.style.display = 'none';
+      }
+    };
   });
 }
+
 // Email Validation
 const contactform = document.getElementById('forms');
 const email = document.getElementById('mail');
