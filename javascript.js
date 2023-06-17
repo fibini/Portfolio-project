@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: 'Mobile-Instagram-clone',
-    featureimage: './img/Screenshot_missions.png',
+    featureimage: './img/insta.png',
     description: 'This is front-end clone of Instagram app with a few similar fuctionalities.',
     technologies: ['Tailwind css', 'React'],
     liveversion: 'https://react-instagram-clone-navy.vercel.app/',

@@ -905,7 +905,7 @@ ul {
 
   .blank {
     width: 100%;
-    height: 448px;
+    height: 100%;
     grid-column: 2 / 4;
     grid-row: 3 / 7;
   }
