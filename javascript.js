@@ -21,12 +21,12 @@ const projects = [
     source: 'https://github.com/fibini/React-Bookstore',
   },
   {
-    name: 'Space-Travelers-Hub',
+    name: 'Mobile-Instagram-clone',
     featureimage: './img/Screenshot_missions.png',
-    description: 'This web app works with the real live data from the SpaceX API. It is for a company (not a real one) that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions',
-    technologies: ['Css', 'Html', 'Javascript'],
-    liveversion: 'https://dev--frolicking-kataifi-133879.netlify.app/',
-    source: 'https://github.com/GiuseppeTG/Space-Travelers-Hub',
+    description: 'This is front-end clone of Instagram app with a few similar fuctionalities.',
+    technologies: ['Tailwind css', 'React'],
+    liveversion: 'https://react-instagram-clone-navy.vercel.app/',
+    source: 'https://github.com/fibini/react-instagram-clone',
   },
   {
     name: 'The Serial Entrepreneur',
